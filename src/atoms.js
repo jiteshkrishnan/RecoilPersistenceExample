@@ -24,6 +24,7 @@ const persistAtom = ({ node, storeID, setSelf, onSet, getPromise }) => {
       }
 
       onSet((newValue, _, isReset) => {
+        console.log("isReset ", isReset);
         isReset
           ? localStorage.removeItem(lookupKey)
           : localStorage.setItem(lookupKey, JSON.stringify(newValue));

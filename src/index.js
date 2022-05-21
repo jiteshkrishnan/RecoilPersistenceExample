@@ -12,7 +12,7 @@ root.render(
     initializeState={({ set }) => {
       set(ConfigAtom, {
         appName: "@ico/internal-countdemo",
-        shouldPersist: false
+        shouldPersist: true
       });
     }}
   >
